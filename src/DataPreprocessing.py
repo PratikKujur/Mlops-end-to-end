@@ -19,4 +19,7 @@ def DataPreprocessing(input_path,output_path):
     print("Preprocessed Data \n",df.head())
     print(f"Preprocessed data is saved in this location -> {output_path}")
 
+if __name__=="__main__":
+    DataPreprocessing(params['input'],params['output'])
+
 
