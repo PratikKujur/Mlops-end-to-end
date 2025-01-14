@@ -1,8 +1,8 @@
 preprocess:
-  input: data/raw/ipl.csv
-  output: data/processed/ipl.csv
+  input: data/raw/winequality.csv
+  output: data/processed/winequality.csv
 
 train:
-  data: data/raw/ipl.csv
+  data: data/raw/winequality.csv
   models: models/model.pkl
 
