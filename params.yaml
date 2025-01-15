@@ -1,8 +1,27 @@
 preprocess:
   input: data/raw/winequality.csv
   output: data/processed/winequality.csv
+  y_test_reg: data/processed/y_test_reg.csv
+  y_test_clf: data/processed/y_test_clf.csv
+  X_test_reg: data/processed/y_test_reg.csv
+  X_test_clf: data/processed/y_test_clf.csv
+ 
+ 
 
 train:
+  X_train_reg: data/for_training/X_train_reg.csv
+  y_train_reg: data/for_training//y_train_reg.csv
+  X_train_clf: data/for_training//X_train_clf.csv
+  y_train_clf: data/for_training//y_train_clf.csv
+
+  
   data: data/raw/winequality.csv
   models: models/model.pkl
+
+evalution:
+  y_test_reg: data/for_evalution/y_test_reg.csv
+  y_test_clf: data/for_evalution/y_test_clf.csv
+  X_test_reg: data/for_evalution/X_test_reg.csv
+  X_test_clf: data/for_evalution/X_test_clf.csv
+
 
