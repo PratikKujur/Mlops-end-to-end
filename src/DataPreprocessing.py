@@ -15,7 +15,7 @@ def DataPreprocessing(input_path,output_path):
     df.drop(labels=unecessary_col,axis='columns',inplace=True)
     
     os.makedirs(os.path.dirname(output_path),exist_ok=True)
-    df.to_csv(output_path,index=False,header=False)
+    df.to_csv(output_path)
     print("Preprocessed Data \n",df.head())
     print(f"Preprocessed data is saved in this location -> {output_path}")
 

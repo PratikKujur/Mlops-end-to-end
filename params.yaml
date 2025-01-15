@@ -14,14 +14,16 @@ train:
   X_train_clf: data/for_training//X_train_clf.csv
   y_train_clf: data/for_training//y_train_clf.csv
 
-  
-  data: data/raw/winequality.csv
-  models: models/model.pkl
+  model_reg: models/model_1_reg.pkl
+  model_clf: models/model_1_clf.pkl
 
 evalution:
   y_test_reg: data/for_evalution/y_test_reg.csv
   y_test_clf: data/for_evalution/y_test_clf.csv
   X_test_reg: data/for_evalution/X_test_reg.csv
   X_test_clf: data/for_evalution/X_test_clf.csv
+
+mlflow:
+  uri: "http://127.0.0.1:5000"
 
 
