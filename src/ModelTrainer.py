@@ -18,6 +18,8 @@ def DataSplit(params_trainer,params_evalution,processed_path,
               y_test_reg_path,y_test_clf_path,X_test_reg_path,X_test_clf_path):
 
     df=pd.read_csv(processed_path)
+    if 'Unnamed: 0' in df.columns:
+        df.drop(columns=['Unnamed: 0'], inplace=True)
 
     y_reg=df['quality']
     y_clf=df['is_red']
@@ -37,15 +39,17 @@ def DataSplit(params_trainer,params_evalution,processed_path,
     os.makedirs(os.path.dirname(y_train_clf_path),exist_ok=True)
     os.makedirs(os.path.dirname(y_test_clf_path),exist_ok=True)
     
-    X_train_reg.to_csv(X_train_reg_path,index=False,header=None)
-    X_test_reg.to_csv(X_test_reg_path,index=False,header=None)
-    y_train_reg.to_csv(y_train_reg_path,index=False,header=None)
-    y_test_reg.to_csv(y_test_reg_path,index=False,header=None)
-    X_train_clf.to_csv(X_train_clf_path,index=False,header=None)
-    X_test_clf.to_csv(X_test_clf_path,index=False,header=None)
-    y_train_clf.to_csv(y_train_clf_path,index=False,header=None)
-    y_test_clf.to_csv(y_test_clf_path,index=False,header=None)
+    X_train_reg.to_csv(X_train_reg_path,index=False,header=True)
+    X_test_reg.to_csv(X_test_reg_path,index=False,header=True)
+    y_train_reg.to_csv(y_train_reg_path,index=False,header=True)
+    y_test_reg.to_csv(y_test_reg_path,index=False,header=True)
+    X_train_clf.to_csv(X_train_clf_path,index=False,header=True)
+    X_test_clf.to_csv(X_test_clf_path,index=False,header=True)
+    y_train_clf.to_csv(y_train_clf_path,index=False,header=True)
+    y_test_clf.to_csv(y_test_clf_path,index=False,header=True)
     
+    print("Training Data Shape:", X_train_clf.shape, "Columns:", X_train_clf.columns)
+    print("Testing Data Shape:", X_test_clf.shape, "Columns:", X_test_clf.columns)
 
     print(f"Data for Taining are saved at ->{params_trainer}")
     print(f"Data for evalution are saved at ->{params_evalution}")
@@ -66,6 +70,7 @@ def ModelTrainer(reg,clf,model_reg_path,model_clf_path,
     pickle.dump(clf,open(model_clf_path,'wb'))
 
     print(f"Regression model is saved at -> {model_reg_path}",f"Classification model is saved at -> {model_clf_path}")
+
 
 
 if __name__=="__main__":
