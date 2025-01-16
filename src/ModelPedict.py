@@ -22,6 +22,6 @@ def ModelPredict(model_reg,model_clf,X_values):
 
     model_clf_output=model_clf.predict(model_clf_input)
 
-    print(f"Wine Quality is -> {model_reg_output}",f"Wine is red if 1 else white if 0 {model_clf_output}")
+    return [model_reg_output,model_clf_output]
 
 
