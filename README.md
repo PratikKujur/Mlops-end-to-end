@@ -44,5 +44,5 @@ mlflow ui
 
 
 ### Testing FastAPI using POSTMAN
-(https://github.com/user-attachments/assets/bdbc0f0e-8b2d-4050-b7e7-9e6eef866ee9)
+![Testing_api](https://github.com/user-attachments/assets/bdbc0f0e-8b2d-4050-b7e7-9e6eef866ee9)
 
