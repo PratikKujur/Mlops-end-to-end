@@ -98,6 +98,3 @@ def ModelEvalution(uri,model_reg,model_clf,
     print("artifacts are save in-> artifacts/")
 
 
-if __name__=="__main__":
-    ModelEvalution(params_track["uri"],params_trainer['model_reg'],params_trainer['model_clf'],
-                   params_evalution['X_test_reg'],params_evalution['y_test_reg'],params_evalution['X_test_clf'],params_evalution['y_test_clf'])

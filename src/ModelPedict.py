@@ -25,9 +25,3 @@ def ModelPredict(model_reg,model_clf,X_values):
     print(f"Wine Quality is -> {model_reg_output}",f"Wine is red if 1 else white if 0 {model_clf_output}")
 
 
-if __name__=="__main__":
-
-    X_test_reg=pd.read_csv(params_evalution['X_test_reg'])
-    X_values=np.array(X_test_reg.iloc[1:2,:])
-    print("X_Value shapeeeee",X_values.shape)
-    ModelPredict(params_trainer['model_reg'],params_trainer['model_clf'],X_values)
