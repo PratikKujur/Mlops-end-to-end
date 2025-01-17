@@ -34,8 +34,12 @@ Now,
 ```bash
 open up you local host and port
 ```
+### Representation of Model Prediction using Swagger ui 
+![swagger_ui](https://github.com/user-attachments/assets/cbefec7b-7225-4148-9141-865066643a47)
+
 To Open Mlflow ui
 ```bash
+
 # Run the following command
 mlflow ui 
 ```
