@@ -6,6 +6,8 @@ from src.ModelPedict import ModelPredict
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier,RandomForestRegressor
+from sklearn.linear_model import ElasticNet
+from sklearn.tree import DecisionTreeClassifier
 import yaml
 
 
@@ -18,6 +20,7 @@ params_track=yaml.safe_load(open("/Users/pratik.kujur/Desktop/Projects/Mlops-end
 
 if __name__=="__main__":
     
+    # Pipeline-1: RandomForestRegressor and RandomForestClassifier
     DataPreprocessing(params['input'],params['output'])
 
     DataSplit(params_trainer,params_evalution,params['output'],
@@ -27,13 +30,29 @@ if __name__=="__main__":
     reg=RandomForestRegressor()
     clf=RandomForestClassifier()
 
-    ModelTrainer(reg,clf,params_trainer['model_reg'],params_trainer['model_clf'],
+    ModelTrainer(reg,clf,params_trainer['model_1_reg'],params_trainer['model_1_clf'],
                 params_trainer['X_train_reg'],params_trainer['y_train_reg'],params_trainer['X_train_clf'],params_trainer['y_train_clf'])
-    ModelEvalution(params_track["uri"],params_trainer['model_reg'],params_trainer['model_clf'],
+    ModelEvalution(params_track["uri"],params_trainer['model_1_reg'],params_trainer['model_1_clf'],
                 params_evalution['X_test_reg'],params_evalution['y_test_reg'],params_evalution['X_test_clf'],params_evalution['y_test_clf'])
     
     X_test_reg=pd.read_csv(params_evalution['X_test_reg'])
     X_values=np.array(X_test_reg.iloc[1:2,:])
     print("X_Value shapeeeee",X_values.shape)
-    Predictions=ModelPredict(params_trainer['model_reg'],params_trainer['model_clf'],X_values)
+    Predictions=ModelPredict(params_trainer['model_1_reg'],params_trainer['model_1_clf'],X_values)
+    print(Predictions)
+
+    # Pipeline-2: ElasticNetRegressor and DecisionTreeClassifier
+    
+    reg=ElasticNet()
+    clf=DecisionTreeClassifier()
+
+    ModelTrainer(reg,clf,params_trainer['model_2_reg'],params_trainer['model_2_clf'],
+                params_trainer['X_train_reg'],params_trainer['y_train_reg'],params_trainer['X_train_clf'],params_trainer['y_train_clf'])
+    ModelEvalution(params_track["uri"],params_trainer['model_2_reg'],params_trainer['model_2_clf'],
+                params_evalution['X_test_reg'],params_evalution['y_test_reg'],params_evalution['X_test_clf'],params_evalution['y_test_clf'])
+    
+    X_test_reg=pd.read_csv(params_evalution['X_test_reg'])
+    X_values=np.array(X_test_reg.iloc[1:2,:])
+    print("X_Value shapeeeee",X_values.shape)
+    Predictions=ModelPredict(params_trainer['model_2_reg'],params_trainer['model_2_clf'],X_values)
     print(Predictions)

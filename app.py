@@ -13,8 +13,8 @@ params_trainer=yaml.safe_load(open("/Users/pratik.kujur/Desktop/Projects/Mlops-e
 
 app = FastAPI(title="Wine Quality Prediction API", description="Predict wine quality and type (red or not)")
 
-model_reg=pickle.load(open(params_trainer['model_reg'],'rb'))
-model_clf=pickle.load(open(params_trainer['model_clf'],'rb'))
+model_reg=pickle.load(open(params_trainer['model_1_reg'],'rb'))
+model_clf=pickle.load(open(params_trainer['model_1_clf'],'rb'))
 
 
 class WineInput(BaseModel):
@@ -52,7 +52,7 @@ async def predict(input_data: WineInput):
         input_data.alcohol
     ]])
 
-    predictions=ModelPredict(params_trainer['model_reg'],params_trainer['model_clf'],features)
+    predictions=ModelPredict(params_trainer['model_1_reg'],params_trainer['model_1_clf'],features)
     
 
     return PredictionOutput(quality=predictions[0], is_red=predictions[1])

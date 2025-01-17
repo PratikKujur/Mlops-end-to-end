@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pratik.kujur/Desktop/Projects/Mlops-end-to-end/mlruns/384910692037892222/849ae88e6e6248cb9c6cd6a4b4cb1429/artifacts
+end_time: 1737094123132
+entry_point_name: ''
+experiment_id: '384910692037892222'
+lifecycle_stage: active
+run_id: 849ae88e6e6248cb9c6cd6a4b4cb1429
+run_name: RandomForestRegressor
+run_uuid: 849ae88e6e6248cb9c6cd6a4b4cb1429
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737094120661
+status: 3
+tags: []
+user_id: pratik.kujur

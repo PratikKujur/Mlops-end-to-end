@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1737094129030
+current_stage: None
+description: ''
+last_updated_timestamp: 1737094129030
+name: tracking-classifier
+run_id: fd081787054e43d0913815b255f0e27a
+run_link: ''
+source: file:///Users/pratik.kujur/Desktop/Projects/Mlops-end-to-end/mlruns/384910692037892222/fd081787054e43d0913815b255f0e27a/artifacts/artifacts/model_clf
+status: READY
+status_message: null
+storage_location: file:///Users/pratik.kujur/Desktop/Projects/Mlops-end-to-end/mlruns/384910692037892222/fd081787054e43d0913815b255f0e27a/artifacts/artifacts/model_clf
+user_id: null
+version: 2
