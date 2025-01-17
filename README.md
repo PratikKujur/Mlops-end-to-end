@@ -1,7 +1,5 @@
 # Mlops-end-to-end
 
-# HateSpeechClassification_End_to_End_project
-
 # How to run?
 ### STEPS:
 
