@@ -1,4 +1,4 @@
-<img width="1680" alt="Screenshot 2025-01-18 at 10 32 44 AM" src="https://github.com/user-attachments/assets/da3793bf-e98c-4fb1-97d9-dbbcbd49fc75" /># Mlops-end-to-end
+# Mlops-end-to-end
 
 # How to run?
 ### STEPS:
