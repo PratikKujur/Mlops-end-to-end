@@ -92,8 +92,11 @@ mlflow ui
 ```
 ### STEP 03- Test API Endpoints with Postman
 1)Open Postman and create a new request.
+
 2)Set the request method to POST.
+
 3)Use the endpoint for prediction (e.g., /predict).
+
 4)Pass the input feature dictionary in JSON format in the request body(raw)
 ```bash
 
