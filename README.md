@@ -19,6 +19,7 @@ Pipeline Execution: The pipeline was orchestrated in main.py, enabling seamless 
 
 This modular structure and detailed workflow provide a comprehensive demonstration of MLOps practices.
 ### Project Structure
+```bash
 .
 ├── Data
 │   ├── raw                   # Raw data
@@ -42,7 +43,7 @@ This modular structure and detailed workflow provide a comprehensive demonstrati
     ├── model_1_clf.pkl       #Randomforest Classifier
     ├── model_2_reg.pkk       #ElasticNet Regressor
     ├── model_2_clf.pkl       #DecisionTree Classifier
-
+```
 
 # How to run?
 ### STEPS:
