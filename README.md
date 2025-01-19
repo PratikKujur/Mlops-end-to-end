@@ -9,6 +9,7 @@ This project demonstrates an end-to-end MLOps pipeline for a wine quality predic
 Pipeline 1: RandomForest Regressor and Classifier.
 Pipeline 2: ElasticNet Regressor and DecisionTree Classifier.
 Trained models were saved in the models directory.
+
 3)Model Evaluation: Metrics such as MSE, MAE, R² (regression) and precision, recall, accuracy, F1-score (classification) were computed and logged to MLflow.
 
 4)Model Prediction: Predictions were made using input features provided as a NumPy array. Regression predictions were used as input to the classification model for quality classification.
