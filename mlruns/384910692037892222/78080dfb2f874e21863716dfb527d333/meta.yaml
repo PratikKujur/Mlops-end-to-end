@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/pratik.kujur/Desktop/Projects/Mlops-end-to-end/mlruns/384910692037892222/78080dfb2f874e21863716dfb527d333/artifacts
+deleted_time: 1737462082860
+end_time: 1737461998682
+entry_point_name: ''
+experiment_id: '384910692037892222'
+lifecycle_stage: deleted
+run_id: 78080dfb2f874e21863716dfb527d333
+run_name: puzzled-newt-677
+run_uuid: 78080dfb2f874e21863716dfb527d333
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737461933447
+status: 4
+tags: []
+user_id: pratik.kujur

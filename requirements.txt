@@ -1,5 +1,7 @@
+pandas
+numpy
 mlflow
 fastapi
-pystacknet
-fastapi
 uvicorn
+streamlit
+ipykernel
