@@ -118,4 +118,11 @@ mlflow ui
 ### Testing API Endpoints using POSTMAN
 ![Testing_api](https://github.com/user-attachments/assets/bdbc0f0e-8b2d-4050-b7e7-9e6eef866ee9)
 
+### STEP 04- Run Streamlit ui
+```bash
+streamlit run st_app.py
+```
+### Represntation of Model Prediction using Streamlit
+![streamlit_ui](https://github.com/user-attachments/assets/1183cc5b-50bc-48e9-b5dd-548c45b2f431)
+
 
