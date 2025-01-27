@@ -42,7 +42,7 @@ This modular structure and detailed workflow provide a comprehensive demonstrati
 ├── models                    # All models
     ├── model_1_reg.pkl       #Randomforest Regressor
     ├── model_1_clf.pkl       #Randomforest Classifier
-    ├── model_2_reg.pkk       #ElasticNet Regressor
+    ├── model_2_reg.pkl       #ElasticNet Regressor
     ├── model_2_clf.pkl       #DecisionTree Classifier
 ```
 
