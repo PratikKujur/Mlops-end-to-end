@@ -18,7 +18,10 @@ Pipeline Execution: The pipeline was orchestrated in main.py, enabling seamless 
 
 5)API Deployment: A FastAPI application was created for serving predictions and tested using Postman.
 
-This modular structure and detailed workflow provide a comprehensive demonstration of MLOps practices.
+6)UI: Added interactive Streamlit UI for model prediction. 
+
+This is the complete modular structure and detailed workflow provide a comprehensive demonstration of MLOps practices.
+
 ### Project Structure
 ```bash
 .
